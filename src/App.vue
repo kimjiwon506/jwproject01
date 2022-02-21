@@ -1,8 +1,9 @@
 <template>
+<!-- div id="wrap" :class{'isTabBar':$route.meta.tabBar} -->
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
   </div>
+<!-- /div id="wrap" :class{'isTabBar':$route.meta.tabBar} -->
 </template>
 
 <script>

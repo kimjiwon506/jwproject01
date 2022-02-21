@@ -1,0 +1,19 @@
+// 절대경로 설정 -> 이 파일은 vscode 내부의 기능 설정을 위한 파일입니다
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "~/*": [
+          "./*"
+        ],
+        "@/*": [
+          "./src/*"
+        ],
+      }
+    },
+    // 제외하는 목록
+    "exclude": [
+      "node_modules",
+      "dist"
+    ]
+  }

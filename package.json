@@ -3,15 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "vue": "^2.5.2",
-    "vue-router": "^3.0.1"
-=======
     "@fortawesome/free-regular-svg-icons": "^5.15.4",
     "axios": "^0.24.0",
     "core-js": "^3.6.5",
@@ -24,7 +20,6 @@
     "vue-router": "^3.5.3",
     "vuex": "^3.6.2",
     "vuex-persistedstate": "^4.1.0"
->>>>>>> d9b893238e1135fa3619f6a19c8b74bf7e2e70b9
   },
   "devDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",

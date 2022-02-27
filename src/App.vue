@@ -1,25 +1,30 @@
 <template>
-<!-- div id="wrap" :class{'isTabBar':$route.meta.tabBar} -->
-  <div id="app">
-    <router-view/>
+  <div id="app" class="note">
+    <transition name="page">
+        <Test></Test>
+      <router-view></router-view>
+    </transition>
   </div>
-<!-- /div id="wrap" :class{'isTabBar':$route.meta.tabBar} -->
 </template>
 
 <script>
+import Test from './views/Test.vue';
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Test,
+  },
 }
 </script>
 
 <style lang="scss">
-@import '@/assets/styles/_variables.scss';
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: $bgColor;
-  margin-top: 60px;
-}
+  .page-enter-active, .page-leave-active { 
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+ 
+  .page-enter, .page-leave-to { 
+    opacity: 0;
+  }
 </style>

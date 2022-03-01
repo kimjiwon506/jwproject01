@@ -1,15 +1,15 @@
 <template>
-    <div class="test">
-        <h2 class="test__title">테트스 파일</h2>
+    <div>
+        <button>클릭</button>
     </div>
 </template>
-<script>
 
+<script>
 export default {
     data() {
         return {
-        
+            
         }
-    },
+    }
 }
 </script>

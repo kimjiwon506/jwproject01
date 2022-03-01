@@ -1,19 +1,16 @@
 <template>
   <div id="app" class="note">
     <transition name="page">
-        <Test></Test>
       <router-view></router-view>
     </transition>
   </div>
 </template>
 
 <script>
-import Test from './views/Test.vue';
 
 export default {
   name: 'App',
   components: {
-    Test,
   },
 }
 </script>

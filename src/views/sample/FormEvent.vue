@@ -43,8 +43,24 @@
             <h3 class="formEvent__title">Input components</h3>
             <div class="formEvent__contents">
                 <JwInput></JwInput>
+                <JwInput :type="'password'"></JwInput>
             </div>
+        </section>
 
+        <!-- radion component -->
+        <section class="formEvent__section">
+            <h3 class="formEvent__title">Radio components</h3>
+            <div class="formEvent__contents">
+                <JwRadio
+                    name="fruit"
+                    v-model="radioValue"
+                    :items="fruitItems"
+                >
+                </JwRadio>
+            </div>
+            <span>
+                선택된 값: {{ radioValue }}
+            </span>
         </section>
     </div>
 </template>
@@ -52,15 +68,23 @@
 <script>
 import JwButton from '../../components/JwButton.vue';
 import JwInput from '../../components/JwInput.vue';
+import JwRadio from '../../components/JwRadio.vue';
 
 export default {
     components: {
         JwButton,
         JwInput,
+        JwRadio,
     },
     data() {
         return {
-
+            radioValue: '',
+            fruitItems: [
+                { label: 'banana', value: 'banana' },
+                { label: 'apple', value: 'apple' },
+                { label: 'kiwi', value: 'kiwi' },
+                { label: 'orange', value: 'orange' },
+            ],
         }
     },
     methods: {

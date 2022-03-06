@@ -37,7 +37,6 @@ export default {
     },
     mounted() {
         this.isDisabled = this.disabled;
-        console.log(this.isDisabled, 'this.isDisabled');
     }
 }
 </script>

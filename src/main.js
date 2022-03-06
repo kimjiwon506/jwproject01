@@ -6,9 +6,9 @@ import { store } from './store/index.js';
 /* fontAwesome */
 import { library } from "@fortawesome/fontawesome-svg-core"; 
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faTimes, faEye } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faTimes);
+library.add(faTimes, faEye);
 
 Vue.config.productionTip = false; 
 Vue.component("font-awesome-icon", FontAwesomeIcon);

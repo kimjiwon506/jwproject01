@@ -18,8 +18,9 @@
         <p class="modalSampleSubTitle">설명을 써주세요</p>
       </Modal>
     </section>
+
     <!-- toast component -->
-    <section class="modalEvent__section">
+    <section class="toastEvent__section">
       <!-- 핸들클릭버튼 이벤트와 같이 사용해주기 -->
       <button @click="handleClickButton">모달샘플</button>
       <Toast :visible="visible">
@@ -29,33 +30,43 @@
         </template>
       </Toast>
     </section>
+
+    <!-- upload component -->
+    <section class="uploadEvent__section">
+      <!-- 핸들클릭버튼 이벤트와 같이 사용해주기 -->
+      <Upload />
+    </section>
   </div>
 </template>
 
 <script>
 import Modal from '../../components/Modal.vue';
 import Toast from '../../components/Toast.vue';
+import Upload from '../../components/Upload.vue';
 export default {
   data() {
     return {
       open: false,
-      visible: false
+      visible: false,
     };
   },
   methods: {
-    handleClickButton(){
-      if(true){
-        this.visible = true
-        setTimeout(()=>{this.visible = false},3000)
+    // 토스트팝업
+    handleClickButton() {
+      if (true) {
+        this.visible = true;
+        setTimeout(() => {
+          this.visible = false;
+        }, 3000);
       }
-    } 
+    },
   },
   components: {
     Modal,
     Toast,
+    Upload,
   },
 };
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

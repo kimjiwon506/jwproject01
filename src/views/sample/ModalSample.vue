@@ -30,12 +30,18 @@
         </template>
       </Toast>
     </section>
+
+    <!-- toast component -->
+    <section class="uploadEvent__section">
+      <Upload uploadTitle="파일을 업로드하세요" />
+    </section>
   </div>
 </template>
 
 <script>
 import Modal from '../../components/Modal.vue';
 import Toast from '../../components/Toast.vue';
+import Upload from '../../components/Upload.vue';
 export default {
   data() {
     return {
@@ -57,6 +63,7 @@ export default {
   components: {
     Modal,
     Toast,
+    Upload
   },
 };
 </script>

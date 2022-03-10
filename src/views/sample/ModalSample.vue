@@ -1,7 +1,7 @@
 <template>
   <div class="sample__formModal">
     <!-- modal component -->
-    <!-- <section class="modalEvent__section">
+    <section class="modalEvent__section">
       <div class="modalSampleBtn">
         <button @click="open = true">클릭하면 모달오픈</button>
       </div>
@@ -17,7 +17,7 @@
         >
         <p class="modalSampleSubTitle">설명을 써주세요</p>
       </Modal>
-    </section> -->
+    </section>
     <!-- toast component -->
     <section class="modalEvent__section">
       <!-- 핸들클릭버튼 이벤트와 같이 사용해주기 -->
@@ -38,6 +38,7 @@ import Toast from '../../components/Toast.vue';
 export default {
   data() {
     return {
+      open: false,
       visible: false
     };
   },

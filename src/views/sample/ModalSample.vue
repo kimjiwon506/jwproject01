@@ -30,19 +30,12 @@
         </template>
       </Toast>
     </section>
-
-    <!-- upload component -->
-    <section class="uploadEvent__section">
-      <!-- 핸들클릭버튼 이벤트와 같이 사용해주기 -->
-      <Upload />
-    </section>
   </div>
 </template>
 
 <script>
 import Modal from '../../components/Modal.vue';
 import Toast from '../../components/Toast.vue';
-import Upload from '../../components/Upload.vue';
 export default {
   data() {
     return {
@@ -64,7 +57,6 @@ export default {
   components: {
     Modal,
     Toast,
-    Upload,
   },
 };
 </script>
